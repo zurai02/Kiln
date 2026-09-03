@@ -1,0 +1,15 @@
+{
+  "name": "kiln",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kiln \u2014 a design studio and code forge in one, on Cloudflare Workers",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute kiln-db --file=./schema.sql",
+    "db:init:remote": "wrangler d1 execute kiln-db --remote --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}
